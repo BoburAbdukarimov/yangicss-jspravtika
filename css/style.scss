@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+siliguri:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Hind Siliguri', sans-serif;
+    scroll-behavior: smooth;
+
+body{
+    background-color:#2c2c35;
+
+    .flexbox{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    
+.menu-bar{
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    background-color: #191919;
+    border-right: 1px solid rgb(73, 73, 73);
+    flex: 1;
+flex-basis: 200px;
+overflow-y: scroll;
+position: relative;
+&::-webkit-scrollbar
+{
+    width: 12px;
+    transition: all .5s ease-in;
+}
+&::-webkit-scrollbar-thumb
+{
+    background-color: #262629;
+    border-radius: 10px;
+    transition: all .5s ease-in;
+
+}
+&::-webkit-scrollbar-thumb:hover
+{
+    background-color: rgb(66, 66, 66);
+    border-radius: 10px;
+    transition: all .5s ease-in;
+}
+    .menu-bar1{
+        width: 75%;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        // overflow-y: scroll;
+        .menu-header{
+            h1{
+                color: white;
+                font-weight: 600;
+                font-size: 30px;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 5px;
+                    right: 70px;
+                    background-color: rgb(228, 0, 0);
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+
+                }
+            }
+        }
+        .menu-body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 15px 0;
+            .body-header{
+                padding: 8px 0;
+                color:rgb(126, 121, 121);
+                p{
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    padding-right: 10px;
+                }
+            }
+            span{
+                display: flex;
+                align-items: center;
+                position: relative;
+                &:hover::after{
+                    border-radius: 5px;
+                    content: "";
+                    position: absolute;
+                    background-color: crimson;
+                    width: 4px;
+                    height: 20px;
+                    top: 13px;
+                    left: -27px;
+                }
+                a{
+                padding: 15px 15px;
+                text-decoration: none;
+                color:rgb(126, 121, 121);
+                font-weight: 600;
+                text-transform: capitalize;
+                font-size: 15px;
+                cursor: pointer; 
+            } 
+        .left{
+        color: white;
+        }
+            i{
+                color:rgb(126, 121, 121);
+                cursor: pointer;
+                padding-left: 5px;
+                &:hover{
+                background-color: rgb(228, 0, 0);
+                padding: 5px;
+                border-radius: 10px;
+                color: white; 
+                transition: all .5s ease-in-out;
+                }
+            }
+            .active{
+                    background-color: rgb(228, 0, 0);
+                    padding: 5px;
+                    border-radius: 10px;
+                    color: white;
+                    &:after{
+                        border-radius: 5px;
+                        content: "";
+                        position: absolute;
+                        background-color: crimson;
+                        width: 4px;
+                        height: 20px;
+                        top: 13px;
+                        left: -27px;
+                    }
+                }
+            }
+        }
+        .menu-footer{
+            position: absolute;
+            bottom: -150px;
+            left: 20px;
+            .menu-footer1{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+.img{
+    color: white;
+    background-color: #4ba8da;
+    padding: 12px;
+    position: absolute;
+    top: -20px;
+    left: 80px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.text{
+    color: rgb(66, 66, 66);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .xira{
+        font-size: 17px;
+        padding-bottom: 5px;
+        font-weight: 600;
+        color: white;
+    }
+}
+.text2{
+    color: white;
+    margin-top: 20px;
+    background-color: rgb(104, 101, 101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    padding: 13px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+        }
+        }
+      
+    }
+
+}
+// menu-bar kotta div//////////////////////////////////////////
+
+.body-content{
+    background-color: #191919;
+// position: relative;
+// top: 0;
+// left: 0;
+overflow-y: scroll;
+flex: 3;
+flex-basis: 900px;
+min-height: 100vh;
+&::-webkit-scrollbar
+{
+    width: 12px;
+    
+}
+&::-webkit-scrollbar-thumb
+{
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+}
+&::-webkit-scrollbar-thumb:hover
+{
+    background-color: rgb(85, 85, 85);
+    border-radius: 10px;
+}
+.container{
+    width: 95%;
+    margin: 20px auto;
+    .body-header1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .leftdiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon1{
+                margin-right: 10px;
+                span{
+                padding: 0 5px;
+                i{
+                    font-size: 20px;
+                    color: #5d5d5e;
+                }
+                }
+            }
+        
+        .input{
+        position: relative;
+input{
+    outline: none;
+    background: #131316;
+    border-radius: 20px;
+    border: 2px solid #7a7a7a;
+    padding: 10px 35px;
+    color: white;
+}
+i{
+    position: absolute;
+    top: 11px;left: 13px;
+    color: #383838;
+}
+        }
+    }
+    .rightdiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icondivv{
+            margin-right: 10px;
+            i{
+                padding: 0 10px;
+                color: rgb(175, 175, 175);
+                cursor: pointer;
+                font-size: 18px;
+                position: relative;
+                &::after{
+                    content: '';
+                position: absolute;
+                top: 0;
+                right: 3.8px;
+                width: 7px;
+                height: 7px;
+                background-color: rgb(228, 0, 0);
+                border-radius: 50%;
+                }
+            }
+        }
+        .profilldiv{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .images{
+                background-image: url('/img/IMG_20210720_235407_982.jpg');
+                background-size: cover;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border:  1px groove rgb(255, 145, 0);
+                margin-right: 10px;
+                cursor: progress;
+            }
+            .imgtext {
+            a{
+                text-decoration: none;
+                color: rgb(109, 109, 109);
+                font-size: 13px;
+                padding: 5px 0;
+            }
+            .roman{
+                font-size: 16px;
+                color: rgb(189, 189, 189);
+                font-weight: 600;
+            }
+            }
+        }
+    }
+    }
+    .video{
+        width: 100%;
+        height: 350px;
+        margin-top: 30px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+            video{
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .container{
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            display: flex;
+            flex-direction: column;
+            .top{
+                display: flex;
+                align-items: center;
+                p{
+                    padding: 5px 5px;
+                    background-color: #333;
+                    color: white;
+                    border-radius: 20px;
+                    font-size: 14px;
+                    margin-right: 10px;
+                }
+                span{
+                border-radius: 50%;
+                color: rgb(100, 100, 100);
+                font-weight: 600;
+                font-size: 14px;
+
+                    img{
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .textvideo{
+                margin-top: 150px;
+                .textt{
+                    margin-right: 10px;
+                    h1{
+                        color: white;
+                        font-size: 30px;
+                        text-transform: uppercase;
+                        font-weight: 550;
+                    }
+                    p{
+                        font-size: 13px;
+                        color: white;
+                        text-transform: uppercase;
+                        
+                    }
+                }
+                .left1{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .left{
+                        a{
+                            padding: 10px 15px;
+                            border-radius: 10px;
+                            background-color: rgb(228, 0, 0);
+                            text-decoration: none;
+                            color: white;
+                            font-weight: 600;
+                        }
+                        i{
+                            padding: 10px;
+                            background-color: #d0d0d049;
+                            border-radius: 10px;
+                            margin-left: 5px;
+                            color: white;
+                        }
+                    }
+                        .right{
+                        margin-right: 30px;
+                    span{
+                        img{
+                            width: 80px;
+                            height: 50px;
+                            border-radius: 15px;
+                            object-fit: cover;
+                            margin: 0 10px;
+
+                        }
+                        .active{
+                            transform: scale(1.2);
+                            box-shadow: 0px 2px 5px 3px #e4e4e4b8;
+                        }
+                    }
+                }
+                }
+            }
+        
+        }
+    
+    }
+    .sarlavha{
+        margin: 15px;
+        h3{
+        color: white;
+        font-size: 22px;
+        font-weight: 500;
+        }
+    }
+    .cardlar{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    .containerlar{
+        background-color: rgba(34, 34, 34, 0.8);
+        width: 200px;
+        height: 120px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-right: 25px;
+        &:hover{
+            transform: scale(1.1);
+            transition: all .5s ease;
+        }
+        .tepadagi{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .picture{
+                background-image: url('/img/IMG_20210720_235407_982.jpg');
+                background-size: cover;
+                background-position: center center;
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+
+            }
+            .pictures{ 
+                        display: flex;
+                        flex-direction: row;
+                    img{
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;  
+                    }
+            }
+        }
+        .pastgi{
+            margin-top: 20px;
+.haqida{
+    p{
+        color: rgb(107, 107, 107);
+        font-size: 13px;
+    }
+    .kotta{
+        font-size: 16px;
+        color: white;
+        font-weight: 600;
+    }
+}
+        }
+    }
+}
+}
+}
+// body-contentlari ////////////////////////////////// kotta div//////////////////
+
+.profillar{
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: #131316;
+    border-left: 1px solid rgb(53, 50, 50);
+    flex: 1;
+flex-basis: 30px;
+    height: 100vh;
+    .profillar1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        .rasm{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 10px 0;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+        .plyus{
+            width: 35px;
+            height: 35px;
+            background-color: rgb(228, 0, 0);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            i{
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+}
+// profillar ////////////////////////////////// kotta div//////////////////
+}
+}
+}
