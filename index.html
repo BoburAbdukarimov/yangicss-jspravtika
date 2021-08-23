@@ -25,45 +25,45 @@
     </div>
 
 <span>
-    <i class="fas fa-home active"></i>
-    <a class="left"  href="#">Browse</a>
+    <i class="fas fa-home active itemm"></i>
+    <a  class="text1"  class="left"  href="#">Browse</a>
 </span>
 <span>
-    <i class="fas fa-heart"></i>
-    <a href="#">watchlist</a>
+    <i  class="fas fa-heart itemm"></i>
+    <a class="text1"  href="#">watchlist</a>
 </span>
 <span>
-    <i class="fas fa-shopping-bag"></i>
-    <a href="#">coming soon</a>
+    <i class="fas fa-shopping-bag itemm"></i>
+    <a class="text1"  href="#">coming soon</a>
 </span>
 <div class="body-header">
     <p>social</p>
 </div>
 
 <span>
-    <i class="fas fa-user"></i>
-    <a href="#">friends</a>
+    <i class="fas fa-user itemm"></i>
+    <a class="text1"  href="#">friends</a>
 </span>
 <span>
-    <i class="fas fa-users"></i>
-    <a href="#">parties</a>
+    <i class="fas fa-users itemm"></i>
+    <a class="text1"  href="#">parties</a>
 </span>
 <div class="body-header">
     <p>General</p>
 </div>
 <span>
-    <i class="fas fa-cog"></i>
-    <a href="#">settings</a>
+    <i class="fas fa-cog itemm"></i>
+    <a class="text1" href="#">settings</a>
 </span>
 <span>
-    <i class="fas fa-sign-in-alt"></i>
-    <a href="#">log out</a>
+    <i class="fas fa-sign-in-alt itemm"></i>
+    <a class="text1"  href="#">log out</a>
 </span>
     </div>
     <div class="menu-footer">
 <div class="menu-footer1">
     <div class="img">
-        <i class="fab fa-neos"></i>
+        <i class="fab fa-neos itemm"></i>
     </div>
     <div class="text">
         <p class="xira">peopsorn Addict</p>
@@ -115,7 +115,9 @@ views challenges
 <div class="video">
     <video id="slider" autoplay muted loop>
     <source src="/video/Pexels Videos 1779202.mp4" type="video/mp4">
-  </video>
+    </video>
+
+  
     <div class="container">
     <div class="top">
 <p>400k</p>
@@ -135,9 +137,11 @@ views challenges
 <i class="fas fa-plus"></i>
         </div>
         <div class="right">
-        <span>  <img id="videomp4" src="/img/IMG_20210720_235407_982.jpg" alt="video" ></span>
-        <span> <img id="videomp4"  src="/img/IMG_20210720_235407_982.jpg" alt="video" ></span>
-        <span> <img id="videomp4"  src="/img/IMG_20210720_235407_982.jpg" alt="video" ></span>
+            <ul class="navigationn">
+                <li onclick="videoUrl('/video/Pexels Videos 1779202.mp4')">  <img id="videomp4" src="/img/IMG_20210720_235407_982.jpg" alt="video" ></li>
+                <li onclick="videoUrl('/video/2_5393066717054242206.mp4')">  <img id="videomp4" src="/img/IMG_20210720_235407_982.jpg" alt="video" ></li>
+                <li onclick="videoUrl('/video/HD XURSHID MAROZIQOV.mp4')">  <img id="videomp4" src="/img/IMG_20210720_235407_982.jpg" alt="video" ></li>
+            </ul>
         </div>
         </div>
         
@@ -274,4 +278,9 @@ views challenges
    
 </body>
 <script src="/script/java.js"></script>
+<script type="text/javascript">
+function videoUrl(hmmmmm) {
+    document.getElementById('slider').src = hmmmmm
+}
+</script>
 </html>

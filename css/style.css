@@ -305,6 +305,14 @@
   overflow: hidden;
   position: relative;
 }
+* body .flexbox .body-content .container .video .slider {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  margin-top: 20px;
+}
 * body .flexbox .body-content .container .video video {
   width: 100%;
   height: 350px;
@@ -384,15 +392,26 @@
 * body .flexbox .body-content .container .video .container .textvideo .left1 .right {
   margin-right: 30px;
 }
-* body .flexbox .body-content .container .video .container .textvideo .left1 .right span img {
+* body .flexbox .body-content .container .video .container .textvideo .left1 .right ul li {
+  list-style: none;
+  cursor: pointer;
+  display: inline;
+}
+* body .flexbox .body-content .container .video .container .textvideo .left1 .right ul li img {
   width: 80px;
   height: 50px;
   border-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0 10px;
+  opacity: 0.7;
 }
-* body .flexbox .body-content .container .video .container .textvideo .left1 .right span .active {
+* body .flexbox .body-content .container .video .container .textvideo .left1 .right ul li img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+* body .flexbox .body-content .container .video .container .textvideo .left1 .right ul li .active {
   transform: scale(1.2);
   box-shadow: 0px 2px 5px 3px #e4e4e4b8;
 }
