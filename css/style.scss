@@ -15,7 +15,24 @@ body{
         justify-content: center;
         width: 100%;
 
-    
+        &::-webkit-scrollbar
+        {
+            width: 12px;
+            transition: all .5s ease-in;
+        }
+        &::-webkit-scrollbar-thumb
+        {
+            background-color: #262629;
+            border-radius: 10px;
+            transition: all .5s ease-in;
+        
+        }
+        &::-webkit-scrollbar-thumb:hover
+        {
+            background-color: rgb(66, 66, 66);
+            border-radius: 10px;
+            transition: all .5s ease-in;
+        }
 .menu-bar{
     // position: fixed;
     // top: 0;
@@ -554,5 +571,6 @@ flex-basis: 30px;
 }
 // profillar ////////////////////////////////// kotta div//////////////////
 }
+
 }
 }
